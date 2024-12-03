@@ -1,4 +1,8 @@
-### ENCODER 8TO3 DATAFLOW Modelling
+**EXP5:ENCODER 8-3 DATA FLOW MODELLING**
+
+NAME: SARAVANA KUMAR
+
+REF NO :24900200
 
 **AIM:**
 
@@ -36,21 +40,51 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+1.	Type the program in Quartus software.
+
+2.	Compile and run the program.
+
+3.	Generate the RTL schematic and save the logic diagram.
+
+4.	Create nodes for inputs and outputs to generate the timing diagram.
+
+5.	For different input combinations generate the timing diagram.
+
 
 **PROGRAM**
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+ Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+modmule enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+
+input y0,y1,y2,y3,y4,y5,y6,y7;
+
+output a,b,c;
+
+assign a= ( y4 | y5 | y6 | y7);
+
+assign b= ( y2 | y3 | y6 | y7);
+
+assign c= ( y1 | y3 | y5 | y7);
+
+endmodule
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![8 to 3 encoder screen shot](https://github.com/user-attachments/assets/956f73e8-2ff8-4624-bf28-b8c094284134)
+
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![8 to 3 encoder waveform screenshot](https://github.com/user-attachments/assets/0ff7b021-8904-4d93-8ef7-1293eeff3f45)
+
+
 
 **RESULTS**
 
+Thua the  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables is implemented
 
 
 
